@@ -1,0 +1,19 @@
+
+li:nth-child(odd){
+visibility: hidden;
+}
+
+li{
+	        
+            border: 2px solid black;
+            margin: 4px;
+            display: inline;
+            text-align: center;
+            background-color: blue;
+            text-align: center;
+            width:3em;
+            font-size: 28px;
+            color: white;
+            float: left;
+}
+
