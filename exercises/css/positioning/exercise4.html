@@ -4,26 +4,48 @@
     <meta charset="UTF-8">
     <title>Exercise #4: Layout</title>
     <style>
-        * {
-            margin: 0px;
+        body {
+            margin: auto;
+            background-color: #ffffcc;
+            width: 80%;
+            
+            
+
+
+
         }
+        
 
         header {
             background-color: #ebde52;
-            height: 80px;
+            height:80px;
+            width:90%;
+            margin-left:2px;
+            
+            
+           
+
+
         }
 
         nav {
-            width: 20%;
-            padding-top: 20px;
+            
+            padding-top: 3px;
+            width: 147px;
+            background-color:red;
+            height:440px;
+            position:absolute;
+            margin-left:64%;
         }
 
         main {
-            position: absolute;
+           
             top: 80px; /* same as the height of header */
-            left: 20%; /* same as the width of nav */
+            left: 147%; /* same as the width of nav */
             width: 80%;
-            padding-top: 20px;
+            padding: 20px 0;
+            background-color: white;
+
         }
 
         p {
@@ -34,7 +56,7 @@
 <body>
 
 <header>
-    <h1>2-column layout</h1>
+    <h1 style="display: inline;">2-column layout</h1>
 </header>
 
 <nav>
@@ -75,6 +97,6 @@
         egestas bibendum et lobortis justo. In in nulla mattis magna mollis pulvinar quis eget lacus. Suspendisse eu justo
         ipsum. Fusce ornare ligula eu orci porttitor, imperdiet mattis nisl tincidunt.</p>
 </main>
-
 </body>
+<footer style="height: 300px; padding: 10px;text-align: center;"></footer>
 </html>
