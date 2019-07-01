@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Grid Form </title>
+	<style type="text/css">
+* {
+    box-sizing: border-box;
+  }
+  form {
+    display: grid;
+    grid-template-areas: 
+      "comments contact"
+      " .button";
+  	grid-template-rows:1fr 50px;  
+  	grid-template-columns: 1fr 1fr;
+    grid-gap: .8em;
+    background: #eee;
+    padding: 1em;
+  }
+  
+  form input {
+    grid-area: contact;
+   	width: 100%;
+    padding: 10px;
+    border: none;
+    margin-bottom: 1px;
+  }
+  
+  #contact-details {
+   grid-area: contact;
+  }
+  #comment-box {
+   grid-area: comments;
+  }
+  form button {
+    grid-area: button;
+    background: gray;
+    color: white;
+  }	
+	</style>
+</head>
+<body>
+<form class="myForm">
+  <div id="contact-details">
+  <label>Name 
+  	<input type="text" >
+  </label>
+  <label>Email 
+  	<input type="email" >
+  </label>
+  <label>Phone 
+  	<input type="telphone">
+  </label>
+  </div>
+  <div id="comment-box">
+  	<label>Comments
+  	<textarea  maxlength="500" style="height:90% ;width:90%;border:none;"></textarea>
+    </label>
+  </div>
+  <button>Submit</button>
+</form>
+</body>
+</html>

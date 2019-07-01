@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Simple Grid Layout</title>
+	<style type="text/css">
+		*{
+			box-sizing: border-box;
+		}
+		.container{
+			display:grid;
+			 grid-template-areas:
+    'header header header header header header'
+    'menu main main main right right'
+    'menu footer footer footer footer footer';
+			 grid-gap: 1px;
+  
+  padding: 1px;
+		}
+		.item1{
+			grid-area: header;
+		}
+		.item2{
+			grid-area:menu;
+		}
+		.item3{
+			grid-area:main;
+		}
+		
+		.item4{
+			grid-area:right;
+		}
+		.item5{
+			grid-area:footer;
+		}
+		.container>div{
+			padding:20px 0;
+			background-color: yellow;
+		}
+
+	</style>
+</head>
+<body>
+<div class="container">
+  <div class="item1">Header</div>
+  <div class="item2">New</div>
+  <div class="item3">Article</div>  
+  <div class="item4">Ads</div>
+  <div class="item5">Footer</div>
+</div>
+</body>
+</html>
