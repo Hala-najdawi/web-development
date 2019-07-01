@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Photo Gallery</title>
+	<style type="text/css">
+		.grid-container {
+  display: grid;
+  grid-template-columns:repeat(5 ,1fr);
+  grid-gap: 10px;
+  
+}
+
+.grid-container > div {
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+.item1 {
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+</style>
+</head>
+<body>
+
+<h1>Grid Lines</h1>
+
+<div class="grid-container">
+  <div class="item1"><img src="istanbul.jpeg"></div>
+  <div class="item2"><img scr="italy.ipeg"></div>
+  <div class="item3"><img src="croatia.jpeg"></div>  
+  <div class="item4"><img scr="italy.ipeg"></div>
+  <div class="item5"><img src="croatia.jpeg"></div>
+  <div class="item6"><img src="italy.jpeg"></div>
+  <div class="item7"><img scr="istanbul.jpeg"></div>
+  <div class="item8"><img src="croatia.jpeg"></div>  
+  <div class="item9"><img scr="italy.ipeg"></div>
+  <div class="item10"><img src="croatia.jpeg"></div>
+</div>
+
+
+</body>
+</html>
