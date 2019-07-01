@@ -1,1 +1,7 @@
-/* this is for you to complete */
+
+ul:only-child{
+	color: blue;
+}
+ul:first-child{
+	font-weight: blod;
+}
